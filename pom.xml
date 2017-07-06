@@ -11,15 +11,17 @@
     <dependencies>
         <dependency>
             <groupId>java-oo</groupId>
-            <!-- javac 7:
-            <artifactId>javac-oo-plugin</artifactId>
-            <version>0.5</version>-->
-            <!-- javac 8: -->
             <artifactId>javac8-oo-plugin</artifactId>
             <version>0.5</version>
             <scope>provided</scope> <!-- compile-only dep -->
         </dependency>
+        <dependency>
+            <groupId>io.github.miraclefoxx</groupId>
+            <artifactId>bigdecimal-math</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
+
     <build>
         <sourceDirectory>${project.basedir}/src</sourceDirectory>
         <pluginManagement>
@@ -37,10 +39,19 @@
         </pluginManagement>
     </build>
     <repositories>
+        <!-- For Java-OO -->
         <repository>
             <id>amelentev</id>
             <url>http://amelentev.github.io/mvnrepo/</url>
         </repository>
+        <!-- For Big decimal math -->
+        <repository>
+            <id>BigDecimalMath-mvn-repo</id>
+            <url>https://raw.github.com/miraclefoxx/BigDecimalMath/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
     </repositories>
-
 </project>
