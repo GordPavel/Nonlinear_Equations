@@ -15,11 +15,6 @@
             <version>0.5</version>
             <scope>provided</scope> <!-- compile-only dep -->
         </dependency>
-        <dependency>
-            <groupId>io.github.miraclefoxx</groupId>
-            <artifactId>bigdecimal-math</artifactId>
-            <version>1.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -43,15 +38,6 @@
         <repository>
             <id>amelentev</id>
             <url>http://amelentev.github.io/mvnrepo/</url>
-        </repository>
-        <!-- For Big decimal math -->
-        <repository>
-            <id>BigDecimalMath-mvn-repo</id>
-            <url>https://raw.github.com/miraclefoxx/BigDecimalMath/mvn-repo/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
         </repository>
     </repositories>
 </project>
